@@ -1,7 +1,7 @@
 [
   { "name": "eyebrow", "label": "Texto superior", "type": "text", "default": "Vivienda nueva en Colombia" },
   { "name": "title", "label": "Título", "type": "text", "default": "Imagina, elige y estrena tu hogar." },
-  { "name": "description", "label": "Descripción", "type": "textarea", "default": "Descubre proyectos pensados para vivir con calma, crecer en familia y construir patrimonio." },
+  { "name": "description", "label": "Descripción", "type": "text", "allow_new_line": true, "default": "Descubre proyectos pensados para vivir con calma, crecer en familia y construir patrimonio." },
   { "name": "primary_cta", "label": "Botón principal", "type": "text", "default": "Explorar proyectos" },
   { "name": "secondary_cta", "label": "Botón secundario", "type": "text", "default": "Recibir asesoría" },
   {

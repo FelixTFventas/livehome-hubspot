@@ -1,7 +1,7 @@
 [
   { "name": "eyebrow", "label": "Texto superior", "type": "text", "default": "Comprar bien se siente diferente" },
   { "name": "title", "label": "Título", "type": "text", "default": "Tu hogar, sin perderte en el proceso" },
-  { "name": "description", "label": "Descripción", "type": "textarea", "default": "Hacemos que cada decisión sea más clara, desde la primera conversación hasta el día de la entrega." },
+  { "name": "description", "label": "Descripción", "type": "text", "allow_new_line": true, "default": "Hacemos que cada decisión sea más clara, desde la primera conversación hasta el día de la entrega." },
   {
     "name": "benefits",
     "label": "Beneficios",
@@ -10,7 +10,7 @@
     "children": [
       { "name": "number", "label": "Número", "type": "text", "default": "01" },
       { "name": "title", "label": "Título", "type": "text", "default": "Beneficio" },
-      { "name": "text", "label": "Descripción", "type": "textarea", "default": "Describe este beneficio para tus compradores." }
+      { "name": "text", "label": "Descripción", "type": "text", "allow_new_line": true, "default": "Describe este beneficio para tus compradores." }
     ],
     "default": [
       { "number": "01", "title": "Opciones claras", "text": "Información financiera presentada de forma sencilla para comparar y decidir." },
@@ -26,7 +26,7 @@
     "occurrence": { "min": 1, "max": 6, "sorting_label_field": "steps.title", "default": 3 },
     "children": [
       { "name": "title", "label": "Título", "type": "text", "default": "Paso" },
-      { "name": "text", "label": "Descripción", "type": "textarea", "default": "Descripción del paso." }
+      { "name": "text", "label": "Descripción", "type": "text", "allow_new_line": true, "default": "Descripción del paso." }
     ],
     "default": [
       { "title": "Imagina", "text": "Cuéntanos qué esperas de tu próximo hogar." },

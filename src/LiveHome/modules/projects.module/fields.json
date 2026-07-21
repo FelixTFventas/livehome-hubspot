@@ -1,7 +1,7 @@
 [
   { "name": "eyebrow", "label": "Texto superior", "type": "text", "default": "Elige dónde comienza tu historia" },
   { "name": "title", "label": "Título", "type": "text", "default": "Proyectos para estrenar" },
-  { "name": "intro", "label": "Introducción", "type": "textarea", "default": "Compara las opciones y encuentra el espacio que se siente como tuyo." },
+  { "name": "intro", "label": "Introducción", "type": "text", "allow_new_line": true, "default": "Compara las opciones y encuentra el espacio que se siente como tuyo." },
   {
     "name": "projects",
     "label": "Proyectos",
@@ -17,7 +17,7 @@
       { "name": "separation", "label": "Valor de separación", "type": "text", "default": "$0 COP" },
       { "name": "down_payment", "label": "Cuota inicial", "type": "text", "default": "$0 COP" },
       { "name": "separation_included", "label": "Separación incluida en la inicial", "type": "boolean", "display": "toggle", "default": true },
-      { "name": "description", "label": "Descripción", "type": "textarea", "default": "Una vivienda nueva para crear tu próxima historia." },
+      { "name": "description", "label": "Descripción", "type": "text", "allow_new_line": true, "default": "Una vivienda nueva para crear tu próxima historia." },
       { "name": "image", "label": "Fotografía", "type": "image" },
       { "name": "cta_label", "label": "Texto del botón", "type": "text", "default": "Conocer el proyecto" },
       { "name": "cta_url", "label": "Enlace del proyecto", "type": "text", "help_text": "Usa #contacto para dirigir al formulario.", "default": "#contacto" }
@@ -63,5 +63,5 @@
       }
     ]
   },
-  { "name": "legal_note", "label": "Nota comercial", "type": "textarea", "default": "Los valores e imágenes son informativos y pueden cambiar sin previo aviso. El precio de Villa del Lago corresponde a 135 SMMLV vigentes a la fecha de escritura." }
+  { "name": "legal_note", "label": "Nota comercial", "type": "text", "allow_new_line": true, "default": "Los valores e imágenes son informativos y pueden cambiar sin previo aviso. El precio de Villa del Lago corresponde a 135 SMMLV vigentes a la fecha de escritura." }
 ]

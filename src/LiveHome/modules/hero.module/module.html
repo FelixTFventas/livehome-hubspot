@@ -1,0 +1,27 @@
+<section class="hero" id="inicio">
+  <div class="hero-orbit" aria-hidden="true"></div>
+  <div class="shell hero-grid">
+    <div class="hero-copy reveal">
+      <p class="eyebrow"><span></span>{{ module.eyebrow }}</p>
+      <h1>{{ module.title }}</h1>
+      <p class="hero-description">{{ module.description }}</p>
+      <div class="hero-actions">
+        <a class="button" href="#proyectos">{{ module.primary_cta }}</a>
+        <a class="text-link" href="#contacto">{{ module.secondary_cta }} <span aria-hidden="true">↗</span></a>
+      </div>
+      <dl class="hero-stats">
+        <div><dt>{{ module.stat_one_value }}</dt><dd>{{ module.stat_one_label }}</dd></div>
+        <div><dt>{{ module.stat_two_value }}</dt><dd>{{ module.stat_two_label }}</dd></div>
+      </dl>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-image-wrap">
+        {% if module.image.src %}
+          <img src="{{ module.image.src|escape_url }}" alt="{{ module.image.alt|escape_attr }}" {% if module.image.width %}width="{{ module.image.width }}"{% endif %} {% if module.image.height %}height="{{ module.image.height }}"{% endif %} fetchpriority="high">
+        {% endif %}
+      </div>
+      <p class="image-note"><span>01</span>{{ module.image_note }}</p>
+      <div class="sun-stamp" aria-hidden="true"><span>VIVE</span><span>MEJOR</span></div>
+    </div>
+  </div>
+</section>

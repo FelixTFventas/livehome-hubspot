@@ -1,0 +1,25 @@
+<header class="site-header" data-header>
+  <div class="shell header-inner">
+    <a class="brand" href="#inicio" aria-label="{{ module.brand }} - Inicio">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 36 36" role="img"><path d="M5 17.5 18 6l13 11.5v13H21v-8h-6v8H5v-13Z"/><path d="M11 14.5V8h5v2.1"/></svg>
+      </span>
+      <span>{{ module.brand }}</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+      <span class="sr-only">Abrir menú</span><span></span><span></span>
+    </button>
+    <nav id="main-navigation" class="main-nav" aria-label="Navegación principal">
+      <a href="#proyectos">{{ module.nav_projects }}</a>
+      <a href="#beneficios">{{ module.nav_benefits }}</a>
+      <a href="#contacto">{{ module.nav_contact }}</a>
+    </nav>
+    <a class="button button-small header-cta" href="https://wa.me/{{ module.whatsapp_phone|regex_replace('[^0-9]', '') }}?text={{ module.whatsapp_message|urlencode }}" target="_blank" rel="noopener">
+      {{ module.whatsapp_label }}
+    </a>
+  </div>
+</header>
+
+<a class="whatsapp-float" href="https://wa.me/{{ module.whatsapp_phone|regex_replace('[^0-9]', '') }}?text={{ module.whatsapp_message|urlencode }}" target="_blank" rel="noopener" aria-label="Contactar a LiveHome por WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a12.7 12.7 0 0 0-11 19.1L3.5 28l6.1-1.5A12.8 12.8 0 1 0 16 3Zm0 22.8c-2 0-3.8-.5-5.4-1.5l-.4-.2-3.6.9.9-3.5-.2-.4A10 10 0 1 1 16 25.8Zm5.5-7.5c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-1.8-.9-3-1.7-4.2-3.8-.3-.5.3-.5.9-1.7.1-.2 0-.5 0-.7l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.2 2.2 1 3.1 1 4.2.8.7-.1 1.8-.8 2.1-1.5.3-.8.3-1.4.2-1.5-.2-.3-.4-.4-.7-.5Z"/></svg>
+</a>

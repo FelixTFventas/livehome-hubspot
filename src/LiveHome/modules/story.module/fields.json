@@ -1,0 +1,37 @@
+[
+  { "name": "eyebrow", "label": "Texto superior", "type": "text", "default": "Comprar bien se siente diferente" },
+  { "name": "title", "label": "Título", "type": "text", "default": "Tu hogar, sin perderte en el proceso" },
+  { "name": "description", "label": "Descripción", "type": "textarea", "default": "Hacemos que cada decisión sea más clara, desde la primera conversación hasta el día de la entrega." },
+  {
+    "name": "benefits",
+    "label": "Beneficios",
+    "type": "group",
+    "occurrence": { "min": 1, "max": 6, "sorting_label_field": "benefits.title", "default": 3 },
+    "children": [
+      { "name": "number", "label": "Número", "type": "text", "default": "01" },
+      { "name": "title", "label": "Título", "type": "text", "default": "Beneficio" },
+      { "name": "text", "label": "Descripción", "type": "textarea", "default": "Describe este beneficio para tus compradores." }
+    ],
+    "default": [
+      { "number": "01", "title": "Opciones claras", "text": "Información financiera presentada de forma sencilla para comparar y decidir." },
+      { "number": "02", "title": "Asesoría humana", "text": "Te acompañamos con respuestas directas durante cada etapa de la compra." },
+      { "number": "03", "title": "Vivienda nueva", "text": "Proyectos para comenzar una nueva etapa y construir patrimonio." }
+    ]
+  },
+  { "name": "process_title", "label": "Título del proceso", "type": "text", "default": "Así de simple" },
+  {
+    "name": "steps",
+    "label": "Pasos",
+    "type": "group",
+    "occurrence": { "min": 1, "max": 6, "sorting_label_field": "steps.title", "default": 3 },
+    "children": [
+      { "name": "title", "label": "Título", "type": "text", "default": "Paso" },
+      { "name": "text", "label": "Descripción", "type": "textarea", "default": "Descripción del paso." }
+    ],
+    "default": [
+      { "title": "Imagina", "text": "Cuéntanos qué esperas de tu próximo hogar." },
+      { "title": "Elige", "text": "Compara proyectos y define la opción ideal." },
+      { "title": "Estrena", "text": "Avanza acompañado hasta recibir tu vivienda." }
+    ]
+  }
+]

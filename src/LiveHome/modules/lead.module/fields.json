@@ -1,0 +1,7 @@
+[
+  { "name": "eyebrow", "label": "Texto superior", "type": "text", "default": "Demos el primer paso" },
+  { "name": "title", "label": "Título", "type": "text", "default": "¿Cuál proyecto quieres conocer?" },
+  { "name": "description", "label": "Descripción", "type": "textarea", "default": "Déjanos tus datos y un asesor de LiveHome te contactará para resolver tus preguntas." },
+  { "name": "response_time", "label": "Mensaje de atención", "type": "text", "default": "Te responderemos lo antes posible en horario de atención." },
+  { "name": "form", "label": "Formulario de HubSpot", "type": "form" }
+]

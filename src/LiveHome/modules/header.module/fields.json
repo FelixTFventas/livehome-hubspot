@@ -1,0 +1,9 @@
+[
+  { "name": "brand", "label": "Nombre de marca", "type": "text", "default": "LiveHome" },
+  { "name": "nav_projects", "label": "Texto: proyectos", "type": "text", "default": "Proyectos" },
+  { "name": "nav_benefits", "label": "Texto: beneficios", "type": "text", "default": "Por qué elegirnos" },
+  { "name": "nav_contact", "label": "Texto: contacto", "type": "text", "default": "Hablemos" },
+  { "name": "whatsapp_label", "label": "Texto del botón", "type": "text", "default": "Quiero información" },
+  { "name": "whatsapp_phone", "label": "WhatsApp con indicativo", "type": "text", "help_text": "Solo números. Ejemplo: 573001234567", "default": "573001234567" },
+  { "name": "whatsapp_message", "label": "Mensaje de WhatsApp", "type": "text", "default": "Hola, quiero recibir información sobre los proyectos de LiveHome." }
+]

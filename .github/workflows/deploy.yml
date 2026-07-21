@@ -1,0 +1,33 @@
+name: Deploy LiveHome to HubSpot
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/LiveHome/**"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: hubspot-production
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    if: ${{ vars.HUBSPOT_ACCOUNT_ID != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy theme to HubSpot
+        uses: HubSpot/hubspot-cms-deploy-action@v2.1.0
+        with:
+          src_dir: src/LiveHome
+          dest_dir: LiveHome
+          account_id: ${{ vars.HUBSPOT_ACCOUNT_ID }}
+          personal_access_key: ${{ secrets.HUBSPOT_PERSONAL_ACCESS_KEY }}

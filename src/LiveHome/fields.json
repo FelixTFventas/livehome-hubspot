@@ -1,0 +1,33 @@
+[
+  {
+    "name": "colors",
+    "label": "Colores de LiveHome",
+    "type": "group",
+    "children": [
+      {
+        "name": "forest",
+        "label": "Verde principal",
+        "type": "color",
+        "default": { "color": "#173F35", "opacity": 100 }
+      },
+      {
+        "name": "terracotta",
+        "label": "Terracota",
+        "type": "color",
+        "default": { "color": "#D96C4B", "opacity": 100 }
+      },
+      {
+        "name": "ivory",
+        "label": "Marfil",
+        "type": "color",
+        "default": { "color": "#F7F2E9", "opacity": 100 }
+      },
+      {
+        "name": "ink",
+        "label": "Texto",
+        "type": "color",
+        "default": { "color": "#1F2926", "opacity": 100 }
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+[
+  { "name": "eyebrow", "label": "Texto superior", "type": "text", "default": "Vivienda nueva en Colombia" },
+  { "name": "title", "label": "Título", "type": "text", "default": "Imagina, elige y estrena tu hogar." },
+  { "name": "description", "label": "Descripción", "type": "textarea", "default": "Descubre proyectos pensados para vivir con calma, crecer en familia y construir patrimonio." },
+  { "name": "primary_cta", "label": "Botón principal", "type": "text", "default": "Explorar proyectos" },
+  { "name": "secondary_cta", "label": "Botón secundario", "type": "text", "default": "Recibir asesoría" },
+  {
+    "name": "image",
+    "label": "Imagen principal",
+    "type": "image",
+    "default": {
+      "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85",
+      "alt": "Casa nueva de arquitectura contemporánea",
+      "loading_enabled": false
+    }
+  },
+  { "name": "image_note", "label": "Nota sobre la imagen", "type": "text", "default": "Espacios que empiezan nuevas historias" },
+  { "name": "stat_one_value", "label": "Dato destacado 1", "type": "text", "default": "2" },
+  { "name": "stat_one_label", "label": "Descripción del dato 1", "type": "text", "default": "proyectos para elegir" },
+  { "name": "stat_two_value", "label": "Dato destacado 2", "type": "text", "default": "100%" },
+  { "name": "stat_two_label", "label": "Descripción del dato 2", "type": "text", "default": "acompañamiento cercano" }
+]

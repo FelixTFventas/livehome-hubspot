@@ -1,0 +1,10 @@
+[
+  { "name": "brand", "label": "Nombre de marca", "type": "text", "default": "LiveHome" },
+  { "name": "tagline", "label": "Lema", "type": "text", "default": "Imagina, elige y estrena tu hogar." },
+  { "name": "instagram_url", "label": "URL de Instagram", "type": "text", "default": "https://instagram.com/" },
+  { "name": "facebook_url", "label": "URL de Facebook", "type": "text", "default": "https://facebook.com/" },
+  { "name": "tiktok_url", "label": "URL de TikTok", "type": "text", "default": "https://tiktok.com/" },
+  { "name": "whatsapp_phone", "label": "WhatsApp con indicativo", "type": "text", "default": "573001234567" },
+  { "name": "email", "label": "Correo", "type": "text", "default": "hola@livehome.co" },
+  { "name": "legal_text", "label": "Texto legal", "type": "text", "default": "Información comercial sujeta a cambios." }
+]

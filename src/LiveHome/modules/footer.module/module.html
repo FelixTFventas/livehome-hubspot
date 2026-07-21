@@ -1,0 +1,25 @@
+<footer class="site-footer">
+  <div class="shell footer-main">
+    <div>
+      <a class="brand brand-footer" href="#inicio">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36"><path d="M5 17.5 18 6l13 11.5v13H21v-8h-6v8H5v-13Z"/></svg></span>
+        <span>{{ module.brand }}</span>
+      </a>
+      <p>{{ module.tagline }}</p>
+    </div>
+    <div class="footer-contact">
+      <span>Conversemos</span>
+      <a href="mailto:{{ module.email|escape_attr }}">{{ module.email }}</a>
+    </div>
+    <nav class="social-links" aria-label="Redes sociales">
+      <a href="{{ module.instagram_url|escape_url }}" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+      <a href="{{ module.facebook_url|escape_url }}" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+      <a href="{{ module.tiktok_url|escape_url }}" target="_blank" rel="noopener" aria-label="TikTok">TK</a>
+      <a href="https://wa.me/{{ module.whatsapp_phone|regex_replace('[^0-9]', '') }}" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+    </nav>
+  </div>
+  <div class="shell footer-bottom">
+    <p>© {{ year }} {{ module.brand }}. {{ module.legal_text }}</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </div>
+</footer>

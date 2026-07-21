@@ -1,0 +1,32 @@
+<!--
+  templateType: none
+  isAvailableForNewContent: false
+-->
+<!doctype html>
+<html lang="{{ html_lang|default('es-CO') }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if content.html_title %}<title>{{ content.html_title }}</title>{% endif %}
+    {% if content.meta_description %}<meta name="description" content="{{ content.meta_description }}">{% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ get_asset_url('../../css/main.css') }}">
+    <style>
+      :root {
+        --forest: {{ theme.colors.forest.color|default('#173F35') }};
+        --terracotta: {{ theme.colors.terracotta.color|default('#D96C4B') }};
+        --ivory: {{ theme.colors.ivory.color|default('#F7F2E9') }};
+        --ink: {{ theme.colors.ink.color|default('#1F2926') }};
+      }
+    </style>
+    {{ standard_header_includes }}
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    {% block body %}{% endblock body %}
+    {{ standard_footer_includes }}
+    <script src="{{ get_asset_url('../../js/main.js') }}" defer></script>
+  </body>
+</html>

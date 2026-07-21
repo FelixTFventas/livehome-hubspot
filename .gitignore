@@ -1,0 +1,14 @@
+# HubSpot credentials
+hubspot.config.yml
+hubspot.config.yaml
+.env
+.env.*
+
+# Local dependencies and tooling
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+
+# Python local preview
+__pycache__/

@@ -1,0 +1,26 @@
+<section class="story section" id="beneficios">
+  <div class="shell story-grid">
+    <div class="story-intro reveal">
+      <p class="eyebrow eyebrow-light"><span></span>{{ module.eyebrow }}</p>
+      <h2>{{ module.title }}</h2>
+      <p>{{ module.description }}</p>
+    </div>
+    <div class="benefit-list">
+      {% for benefit in module.benefits %}
+        <article class="benefit reveal">
+          <span>{{ benefit.number }}</span>
+          <h3>{{ benefit.title }}</h3>
+          <p>{{ benefit.text }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="shell process reveal">
+    <h3>{{ module.process_title }}</h3>
+    <ol>
+      {% for step in module.steps %}
+        <li><span>0{{ loop.index }}</span><strong>{{ step.title }}</strong><p>{{ step.text }}</p></li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

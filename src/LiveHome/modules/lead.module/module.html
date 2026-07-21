@@ -1,0 +1,29 @@
+<section class="lead-section section" id="contacto">
+  <div class="shell lead-card reveal">
+    <div class="lead-copy">
+      <p class="eyebrow"><span></span>{{ module.eyebrow }}</p>
+      <h2>{{ module.title }}</h2>
+      <p>{{ module.description }}</p>
+      <div class="response-time">
+        <span aria-hidden="true"></span>
+        {{ module.response_time }}
+      </div>
+    </div>
+    <div class="form-panel">
+      {% if module.form.form_id %}
+        {% form
+          form_to_use="{{ module.form.form_id }}"
+          response_response_type="{{ module.form.response_type }}"
+          response_message="{{ module.form.message }}"
+          response_redirect_id="{{ module.form.redirect_id }}"
+          response_redirect_url="{{ module.form.redirect_url }}"
+        %}
+      {% else %}
+        <div class="form-placeholder">
+          <strong>Conecta tu formulario</strong>
+          <p>Selecciona este módulo en el editor de HubSpot y elige el formulario que deseas mostrar.</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

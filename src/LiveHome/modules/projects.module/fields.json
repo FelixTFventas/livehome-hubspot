@@ -1,0 +1,67 @@
+[
+  { "name": "eyebrow", "label": "Texto superior", "type": "text", "default": "Elige dónde comienza tu historia" },
+  { "name": "title", "label": "Título", "type": "text", "default": "Proyectos para estrenar" },
+  { "name": "intro", "label": "Introducción", "type": "textarea", "default": "Compara las opciones y encuentra el espacio que se siente como tuyo." },
+  {
+    "name": "projects",
+    "label": "Proyectos",
+    "type": "group",
+    "occurrence": { "min": 1, "max": 20, "sorting_label_field": "projects.name", "default": 2 },
+    "children": [
+      { "name": "name", "label": "Nombre", "type": "text", "default": "Nuevo proyecto" },
+      { "name": "location", "label": "Ubicación", "type": "text", "default": "Colombia" },
+      { "name": "type", "label": "Tipo", "type": "choice", "display": "select", "choices": [["Casa", "Casa"], ["Apartamento", "Apartamento"], ["Otro", "Otro"]], "default": "Casa" },
+      { "name": "badge", "label": "Etiqueta", "type": "text", "default": "Vivienda nueva" },
+      { "name": "price", "label": "Precio", "type": "text", "help_text": "Escribe el valor completo como debe mostrarse.", "default": "$0 COP" },
+      { "name": "price_note", "label": "Aclaración del precio", "type": "text", "default": "Precio sujeto a condiciones comerciales" },
+      { "name": "separation", "label": "Valor de separación", "type": "text", "default": "$0 COP" },
+      { "name": "down_payment", "label": "Cuota inicial", "type": "text", "default": "$0 COP" },
+      { "name": "separation_included", "label": "Separación incluida en la inicial", "type": "boolean", "display": "toggle", "default": true },
+      { "name": "description", "label": "Descripción", "type": "textarea", "default": "Una vivienda nueva para crear tu próxima historia." },
+      { "name": "image", "label": "Fotografía", "type": "image" },
+      { "name": "cta_label", "label": "Texto del botón", "type": "text", "default": "Conocer el proyecto" },
+      { "name": "cta_url", "label": "Enlace del proyecto", "type": "text", "help_text": "Usa #contacto para dirigir al formulario.", "default": "#contacto" }
+    ],
+    "default": [
+      {
+        "name": "Villa Santa",
+        "location": "Colombia",
+        "type": "Casa",
+        "badge": "Proyecto de casas",
+        "price": "$187.000.000 COP",
+        "price_note": "Precio de venta",
+        "separation": "$6.000.000 COP",
+        "down_payment": "$31.000.000 COP",
+        "separation_included": true,
+        "description": "Un proyecto para estrenar hogar y construir patrimonio con acompañamiento cercano.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=85",
+          "alt": "Fachada contemporánea representativa de Villa Santa",
+          "loading_enabled": true
+        },
+        "cta_label": "Quiero saber más",
+        "cta_url": "#contacto"
+      },
+      {
+        "name": "Villa del Lago",
+        "location": "Colombia",
+        "type": "Casa",
+        "badge": "Proyecto de casas",
+        "price": "135 SMMLV",
+        "price_note": "Valor calculado a la fecha de escritura",
+        "separation": "$3.000.000 COP",
+        "down_payment": "$70.000.000 COP",
+        "separation_included": true,
+        "description": "Una propuesta residencial pensada para disfrutar una vida tranquila en un hogar propio.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85",
+          "alt": "Casa moderna representativa de Villa del Lago",
+          "loading_enabled": true
+        },
+        "cta_label": "Quiero saber más",
+        "cta_url": "#contacto"
+      }
+    ]
+  },
+  { "name": "legal_note", "label": "Nota comercial", "type": "textarea", "default": "Los valores e imágenes son informativos y pueden cambiar sin previo aviso. El precio de Villa del Lago corresponde a 135 SMMLV vigentes a la fecha de escritura." }
+]

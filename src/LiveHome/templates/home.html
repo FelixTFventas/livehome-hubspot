@@ -1,0 +1,17 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: LiveHome - Proyectos de vivienda
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+  {% module "livehome_header" path="../modules/header", label="Encabezado LiveHome" %}
+  <main id="contenido">
+    {% module "livehome_hero" path="../modules/hero", label="Presentación principal" %}
+    {% module "livehome_projects" path="../modules/projects", label="Galería de proyectos" %}
+    {% module "livehome_story" path="../modules/story", label="Beneficios y proceso" %}
+    {% module "livehome_lead" path="../modules/lead", label="Formulario de contacto" %}
+  </main>
+  {% module "livehome_footer" path="../modules/footer", label="Pie de página" %}
+{% endblock body %}

@@ -1,0 +1,49 @@
+<section class="projects section" id="proyectos" data-project-gallery>
+  <div class="shell">
+    <div class="section-heading reveal">
+      <div>
+        <p class="eyebrow"><span></span>{{ module.eyebrow }}</p>
+        <h2>{{ module.title }}</h2>
+      </div>
+      <p>{{ module.intro }}</p>
+    </div>
+
+    <div class="project-filters" data-project-filters aria-label="Filtrar proyectos"></div>
+
+    <div class="project-grid">
+      {% for project in module.projects %}
+        <article class="project-card reveal" data-project-card data-type="{{ project.type|escape_attr }}">
+          <div class="project-media">
+            {% if project.image.src %}
+              <img src="{{ project.image.src|escape_url }}" alt="{{ project.image.alt|escape_attr }}" {% if project.image.width %}width="{{ project.image.width }}"{% endif %} {% if project.image.height %}height="{{ project.image.height }}"{% endif %} loading="lazy">
+            {% endif %}
+            {% if project.badge %}<span class="project-badge">{{ project.badge }}</span>{% endif %}
+            <span class="project-index" aria-hidden="true">0{{ loop.index }}</span>
+          </div>
+          <div class="project-content">
+            <div class="project-title-row">
+              <div>
+                <p class="project-location">{{ project.location }} · {{ project.type }}</p>
+                <h3>{{ project.name }}</h3>
+              </div>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+            <p class="project-description">{{ project.description }}</p>
+            <div class="project-price">
+              <span>Precio</span>
+              <strong>{{ project.price }}</strong>
+              {% if project.price_note %}<small>{{ project.price_note }}</small>{% endif %}
+            </div>
+            <dl class="payment-details">
+              <div><dt>Separación</dt><dd>{{ project.separation }}</dd></div>
+              <div><dt>Cuota inicial</dt><dd>{{ project.down_payment }}</dd></div>
+            </dl>
+            {% if project.separation_included %}<p class="included-note">La separación está incluida en la cuota inicial.</p>{% endif %}
+            <a class="project-link" href="{{ project.cta_url|escape_url }}">{{ project.cta_label }} <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+    {% if module.legal_note %}<p class="legal-note">{{ module.legal_note }}</p>{% endif %}
+  </div>
+</section>

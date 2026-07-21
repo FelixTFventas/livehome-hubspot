@@ -6,9 +6,9 @@
     "name": "projects",
     "label": "Proyectos",
     "type": "group",
-    "occurrence": { "min": 1, "max": 20, "sorting_label_field": "projects.name", "default": 2 },
+    "occurrence": { "min": 1, "max": 20, "sorting_label_field": "projects.project_name", "default": 2 },
     "children": [
-      { "name": "name", "label": "Nombre", "type": "text", "default": "Nuevo proyecto" },
+      { "name": "project_name", "label": "Nombre", "type": "text", "default": "Nuevo proyecto" },
       { "name": "location", "label": "Ubicación", "type": "text", "default": "Colombia" },
       { "name": "type", "label": "Tipo", "type": "choice", "display": "select", "choices": [["Casa", "Casa"], ["Apartamento", "Apartamento"], ["Otro", "Otro"]], "default": "Casa" },
       { "name": "badge", "label": "Etiqueta", "type": "text", "default": "Vivienda nueva" },
@@ -24,7 +24,7 @@
     ],
     "default": [
       {
-        "name": "Villa Santa",
+        "project_name": "Villa Santa",
         "location": "Colombia",
         "type": "Casa",
         "badge": "Proyecto de casas",
@@ -44,7 +44,7 @@
         "cta_url": "#contacto"
       },
       {
-        "name": "Villa del Lago",
+        "project_name": "Villa del Lago",
         "location": "Colombia",
         "type": "Casa",
         "badge": "Proyecto de casas",

@@ -18,7 +18,7 @@
       { "name": "down_payment", "label": "Cuota inicial", "type": "text", "default": "$0 COP" },
       { "name": "separation_included", "label": "Separación incluida en la inicial", "type": "boolean", "display": "toggle", "default": true },
       { "name": "description", "label": "Descripción", "type": "text", "allow_new_line": true, "default": "Una vivienda nueva para crear tu próxima historia." },
-      { "name": "image", "label": "Fotografía", "type": "image" },
+      { "name": "image", "label": "Fotografía", "type": "image", "show_loading": true },
       { "name": "cta_label", "label": "Texto del botón", "type": "text", "default": "Conocer el proyecto" },
       { "name": "cta_url", "label": "Enlace del proyecto", "type": "text", "help_text": "Usa #contacto para dirigir al formulario.", "default": "#contacto" }
     ],
@@ -35,9 +35,10 @@
         "separation_included": true,
         "description": "Un proyecto para estrenar hogar y construir patrimonio con acompañamiento cercano.",
         "image": {
+          "size_type": "auto",
           "src": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=85",
           "alt": "Fachada contemporánea representativa de Villa Santa",
-          "loading_enabled": true
+          "loading": "lazy"
         },
         "cta_label": "Quiero saber más",
         "cta_url": "#contacto"
@@ -54,9 +55,10 @@
         "separation_included": true,
         "description": "Una propuesta residencial pensada para disfrutar una vida tranquila en un hogar propio.",
         "image": {
+          "size_type": "auto",
           "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85",
           "alt": "Casa moderna representativa de Villa del Lago",
-          "loading_enabled": true
+          "loading": "lazy"
         },
         "cta_label": "Quiero saber más",
         "cta_url": "#contacto"

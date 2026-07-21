@@ -8,10 +8,12 @@
     "name": "image",
     "label": "Imagen principal",
     "type": "image",
+    "show_loading": true,
     "default": {
+      "size_type": "auto",
       "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85",
       "alt": "Casa nueva de arquitectura contemporánea",
-      "loading_enabled": false
+      "loading": "eager"
     }
   },
   { "name": "image_note", "label": "Nota sobre la imagen", "type": "text", "default": "Espacios que empiezan nuevas historias" },
